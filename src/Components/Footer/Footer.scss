@@ -7,7 +7,7 @@
 
 footer{
     background-color:rgb(0, 0, 44);
-    padding:70px 0;
+    padding:4rem 1rem;
     line-height: 1.5;
     font-family: 'Poppins', sans-serif;
 
@@ -89,12 +89,13 @@ transition: all 0.5s ease;
     margin: 0.5rem;
     height: 90px;
     width:90px;
+    transform: scale(1.05);
     transition: transform 100ms ease-in-out;
     border-radius: 50%;
     background-color: rgb(0, 0, 44);
 }
 .image2:hover{
-    transform: scale(1.08);
+    transform: scale(1.12);
 }
 p{
     text-align: center;

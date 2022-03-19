@@ -1,0 +1,16 @@
+.slideshow-container{
+    text-align: center;
+    margin: 1rem auto 2rem;
+
+    h1{
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media(max-width:1000px){
+    .slideshow-container{
+        margin: 0 auto;
+    }
+}
+@import "~react-image-gallery/styles/scss/image-gallery.scss";

@@ -7,7 +7,7 @@ const Footer = () => {
         <footer className="footer">
         <div className="container">
            <div className="row">
-               <div className="footer-col">
+               <div className="footer-col" >
                    <h2>Quick Links</h2>
                    <ul>
                        <li><a href="#">Home</a></li>
@@ -19,11 +19,11 @@ const Footer = () => {
                <div className="footer-col">
                <div className="image-col">
                 <img src="/assets/BLOOD_DONATION_CAMP.jpeg" alt="" className="image1" />
-                <img src="/assets/download.jpg" className="image2" />
+                <img src="/assets/newlogo.png" className="image2" />
                </div>
             </div>
                <div className="footer-col">
-               <div className="sociallinks">
+               <div className="sociallinks" style={{textAlign:"center"}}>
                    <h2>Follow us on</h2>
                    <a href="#"><i className="fab fa-facebook-f"></i></a>
                    <a href="#"><i className="fab fa-twitter"></i></a>
