@@ -1,0 +1,208 @@
+
+.Loader {
+    --bg-color: hsl(49 37% 94%);
+    --typewriterSpeed: 1.3s;
+    --typewriterCharacters: 24;
+}
+
+.Loader{
+    background: rgb(247, 247, 247);
+    margin: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    text-align: center;
+
+    #preloader{    
+    font-size: clamp(0.5rem, 0.5rem, 2rem);
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    position: relative;
+    width: max-content;
+}
+.text-1{
+    display:center;
+    font: 1.5em "Fira Sans", sans-serif;
+    padding:1%;
+    transform:translateY(-1.4em)
+}
+
+.text-1a{
+    display: inline-block;
+    font-weight: bold;
+   
+   
+    font-size: clamp(0.5rem, 0.5rem, 2rem);
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    position: relative;
+    width: max-content;
+}
+.text-2{
+    display:center;
+    font: 1.5em "Fira Sans", sans-serif;
+    padding:1%;
+    transform:translateY(-1.4em)    
+
+}
+.text-2a{
+    display: inline-block;
+    font-weight: bold;
+    font-size: clamp(0.5rem, 0.5rem, 2rem);
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    position: relative;
+    width: max-content; 
+}
+
+.text-3{
+    display:center;
+    font: 1.5em "Fira Sans", sans-serif;
+    padding:1%;
+    transform:translateY(-1.4em)
+}
+.text-3a{
+    display: inline-block;
+    font-weight: bold; 
+    font-size: clamp(0.5rem, 0.5rem, 2rem);
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    position: relative;
+    width: max-content;
+}
+img{
+    height:33%;
+    width:33%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+   transform: translate(108%,-45%);
+animation :fadeIn 4.8s;
+}
+
+.text-1a{
+    font-size: clamp(0.5rem, 0.5rem, 2rem);
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    position: relative;
+    width: max-content;
+  }
+  
+  .text-1a::before,
+  .text-1a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .text-1a::before {
+    background: rgb(247, 247, 247);
+    animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 0.02s forwards;
+  }
+  
+  .text-1a::after {
+    width: 0.125em;
+    background: black;
+    animation: typewriter var(--typewriterSpeed)
+        steps(var(--typewriterCharacters)) 0.02s forwards,
+      blink 750ms steps(var(--typewriterCharacters)) infinite;
+  }
+  .text-2a{
+    font-size: clamp(0.5rem, 0.5rem, 2rem);
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    position: relative;
+    width: max-content;
+  }
+  
+  .text-2a::before,
+  .text-2a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .text-2a::before {
+    background: rgb(247, 247, 247);
+    animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1.55s forwards;
+  }
+  
+  .text-2a::after {
+    width: 0.125em;
+    background: black;
+    animation: typewriter var(--typewriterSpeed)
+        steps(var(--typewriterCharacters)) 1.55s forwards,
+      blink 750ms steps(var(--typewriterCharacters)) infinite;
+  }
+  .text-3a{
+    font-size: clamp(0.5rem, 0.5rem, 2rem);
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    position: relative;
+    width: max-content;
+  }
+  
+  .text-3a::before,
+  .text-3a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .text-3a::before {
+    background: rgb(247, 247, 247);
+    animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 2.58s forwards;
+  }
+  
+  .text-3a::after {
+    width: 0.125em;
+    background: black;
+    animation: typewriter var(--typewriterSpeed)
+        steps(var(--typewriterCharacters)) 2.58s forwards,
+      blink 750ms steps(var(--typewriterCharacters)) infinite;
+  }
+  b{
+      color:red;
+  }
+  
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    to {
+      background: transparent;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn{
+    0% {opacity:0.3;}
+  100% {opacity:1;}
+  }
+
+
+}
+
