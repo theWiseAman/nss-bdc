@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ubuntu+Mono&display=swap");
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  color: hsl(40, 100%, 97%);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 6rem;
+
+  .background {
+    height: 60vh;
+    background-image: linear-gradient(hsl(248, 100%, 11%), hsl(248, 50%, 11%));
+    padding: 2rem;
+
+    .hero-content {
+      z-index: 1;
+      h1 {
+        font-family: "Times New Roman", serif;
+        font-weight: 500;
+        font-size: 3rem;
+      }
+      margin-top: 6rem;
+    }
+
+    .pulse {
+      position: absolute;
+      top: 9rem;
+      right: 7rem;
+      width: 40%;
+    }
+  }
+
+  .video-container {
+    z-index: 1;
+    video {
+      margin-top: 9rem;
+      border-radius: 1rem;
+    }
+  }
+
+  .donateCount {
+    margin-top: -1rem;
+    color: hsl(248, 100%, 11%);
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .hero-section {
+    margin-bottom: 0rem;
+    .hero-content {
+      margin-top: 0rem;
+    }
+    .background {
+      height: auto;
+    }
+    .pulse {
+      display: none;
+    }
+    .donateCount {
+      text-align: center;
+      margin-top: 2rem;
+      color: floralwhite;
+    }
+    .video-container {
+      video {
+        margin-top: 1rem;
+      }
+    }
+  }
+}

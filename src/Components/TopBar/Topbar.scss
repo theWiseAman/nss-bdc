@@ -5,34 +5,30 @@
   src: url(./LiberationSerif-Regular.ttf) format("truetype");
 }
 
-.navBarTop {
-  padding: 1rem 0.75rem;
-  box-shadow: 0rem 0.2rem 0.5rem hsl(0, 0%, 63%);
+// nav {
+//   position: sticky;
+//   top: 0rem;
+//   background-color: floralwhite;
+//   z-index: 2;
+// }
+
+a {
+  text-decoration: none;
+  color: #222222;
 }
 
-.links_top {
-  align-self: center;
-  margin-left: auto;
-}
-
-.bdclogo {
-  width: 5.25rem;
-  height: 5.25rem;
-  margin-right: 0.5rem;
-}
 .nssLogo {
   max-width: 90%;
   height: auto;
   display: inline-block;
+  border-left: 0.15rem solid black;
 }
 
-.brand {
-  color: #000;
-  text-decoration: none;
+.bdcLogo {
+  width: 5.25rem;
+  height: 5.25rem;
 }
-
 .navBarTop {
-  display: flex;
   background-color: #ffffff;
 }
 
@@ -80,6 +76,14 @@
   .logo {
     width: 90%;
     height: auto;
+
+    .nssLogo {
+      display: none;
+    }
+
+    .logoName {
+      display: none !important;
+    }
 
     .nss {
       font-size: 2.4rem;

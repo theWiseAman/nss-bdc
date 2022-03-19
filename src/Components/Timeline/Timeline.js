@@ -1,7 +1,7 @@
 import "./timeline.scss"
 
 const Timeline = () => (
-    <div className="timeline_container">
+    <div className="timeline_container" id="steps-to-donate">
         <h1>Steps To Donate</h1>
         <ul>
             <li>

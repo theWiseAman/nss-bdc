@@ -33,7 +33,7 @@ const images = [
 ];
 
 const SlideShow = () => (
-    <div className="slideshow-container">
+    <div className="slideshow-container" id="gallery">
         <h1>Gallery</h1>
         <ImageGallery
             items={images}
