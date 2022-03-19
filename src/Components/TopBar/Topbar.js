@@ -1,23 +1,22 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
 
 import classes from "./Topbar.scss";
 
 const Topbar = () => {
 
     return (
-        <nav className='container-fluid'>
+        <nav className='px-4'>
             <Navbar collapseOnSelect expand="lg" variant="light" className={`${classes.navBarTop} navBarTop`}>
                 <Navbar.Brand className={`${classes.brand} brand`}>
-                    <NavLink to={"/"} exact={true}>
-                        <div className={`${classes.logo} logo`} style={{ display: "flex", alignItems: "center" }}>                        
+                    <a href={"/"} exact={true}>
+                        <div className={`${classes.logo} logo`} style={{ display: "flex", alignItems: "center" }}>
+                        
                             <div>
-                                <img className={`${classes.nssLogo} bdclogo`} src="/assets/BLOOD_DONATION_CAMP.jpeg" />
-                                <img className={`${classes.nssLogo} nssLogo`} src="/assets/nss_84.png" />
+                                <img className={`${classes.bdcLogo} bdcLogo`} src="/assets/logo_bdc.svg" />
+                                <img className={`${classes.nssLogo} nssLogo ms-2 px-2`} src="/assets/nss_84.png" />
                             </div>
-
-                            <div style={{ display: "flex", alignItems: "center"}}>
+                            <div className={`${classes.logoName} logoName`} style={{ display: "flex", alignItems: "center"}}>
                                 <div className={`${classes.nss} nss`}>
                                     NSS
                                 </div>
@@ -31,30 +30,20 @@ const Topbar = () => {
                                 </div>
                             </div>                
                         </div>
-                    </NavLink>
+                    </a>
                 </Navbar.Brand>
-
-                <Nav className={`${classes.links_top} links_top`}>
-                    <NavLink to={"/"} exact={true} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Home</NavLink>
-                    <NavLink to={"/aboutus"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Mythbusters</NavLink>
-                    <NavLink to={"/aboutus"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Steps To Donate</NavLink>
-                    <NavLink to={"/contactus"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Contact Us</NavLink>
-                </Nav>
-                {/* <Navbar.Toggle  aria-controls="responsive-navbar-nav" />
+                <Navbar.Toggle  aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="mr-auto">
+                    <Nav className="offset-md-6">
                     
                     </Nav>
-                    <Nav className={`${classes.links_top} links_top`}>
-                        <NavLink to={"/"} exact={true} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Home</NavLink>
-                        <NavLink to={"/aboutus"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">About Us</NavLink>
-                        <NavLink to={"/departments"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Departments</NavLink>
-                        <NavLink to={"/events"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Events</NavLink>
-                        <NavLink to={"/resources"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Resources</NavLink>
-                        <NavLink to={"/recruitments"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Recruitments</NavLink>
-                        <NavLink to={"/contactus"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Contact Us</NavLink>
+                    <Nav className={`${classes.links_top} links_top col-md-auto`}>
+                        <a href={"/"} exact={true} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Home</a>
+                        <a href={"#steps-to-donate"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Steps To Donate</a>
+                        <a href={"#gallery"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Gallery</a>
+                        <a href={"#contact-us"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Contact Us</a>
                     </Nav>
-                </Navbar.Collapse> */}
+                </Navbar.Collapse>
             </Navbar>
         </nav>
     );

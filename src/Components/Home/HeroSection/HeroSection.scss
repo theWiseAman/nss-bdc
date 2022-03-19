@@ -26,7 +26,7 @@
 
     .pulse {
       position: absolute;
-      top: 10rem;
+      top: 9rem;
       right: 7rem;
       width: 40%;
     }
@@ -45,5 +45,30 @@
     color: hsl(248, 100%, 11%);
     font-weight: 700;
     font-size: 1.5rem;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .hero-section {
+    margin-bottom: 0rem;
+    .hero-content {
+      margin-top: 0rem;
+    }
+    .background {
+      height: auto;
+    }
+    .pulse {
+      display: none;
+    }
+    .donateCount {
+      text-align: center;
+      margin-top: 2rem;
+      color: floralwhite;
+    }
+    .video-container {
+      video {
+        margin-top: 1rem;
+      }
+    }
   }
 }
