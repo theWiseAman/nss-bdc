@@ -19,7 +19,7 @@ const Footer = () => {
                <div className="footer-col">
                <div className="image-col">
                 <img src="/assets/BLOOD_DONATION_CAMP.jpeg" alt="" className="image1" />
-                <img src="/assets/download.jpg" className="image2" />
+                <img src="/assets/nss_84.png" className="image2" />
                </div>
             </div>
                <div className="footer-col">

@@ -7,13 +7,13 @@ import classes from "./Topbar.scss";
 const Topbar = () => {
 
     return (
-        <nav>
+        <nav className='container-fluid'>
             <Navbar collapseOnSelect expand="lg" variant="light" className={`${classes.navBarTop} navBarTop`}>
                 <Navbar.Brand className={`${classes.brand} brand`}>
                     <NavLink to={"/"} exact={true}>
                         <div className={`${classes.logo} logo`} style={{ display: "flex", alignItems: "center" }}>                        
                             <div>
-                                <img className={`${classes.nssLogo} bdclogo`} src="/assets/logo_bdc.svg" />
+                                <img className={`${classes.nssLogo} bdclogo`} src="/assets/BLOOD_DONATION_CAMP.jpeg" />
                                 <img className={`${classes.nssLogo} nssLogo`} src="/assets/nss_84.png" />
                             </div>
 
@@ -36,9 +36,8 @@ const Topbar = () => {
 
                 <Nav className={`${classes.links_top} links_top`}>
                     <NavLink to={"/"} exact={true} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Home</NavLink>
-                    <NavLink to={"/aboutus"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Timeline</NavLink>
-                    <NavLink to={"/aboutus"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Steps To Donate</NavLink>
                     <NavLink to={"/aboutus"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Mythbusters</NavLink>
+                    <NavLink to={"/aboutus"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Steps To Donate</NavLink>
                     <NavLink to={"/contactus"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Contact Us</NavLink>
                 </Nav>
                 {/* <Navbar.Toggle  aria-controls="responsive-navbar-nav" />

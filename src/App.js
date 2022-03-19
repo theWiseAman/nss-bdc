@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Main from "./Components/Main";
 import Loader from "./Components/Loader/Loader";
 import React, { useEffect, useState } from 'react';
