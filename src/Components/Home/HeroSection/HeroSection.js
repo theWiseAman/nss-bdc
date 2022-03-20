@@ -1,9 +1,17 @@
 import React, { useState } from 'react'
 import './HeroSection.scss'
-
+import { useSpring, animated, config } from 'react-spring'
 
 const HeroSection = () => {
   const [donateCount, setDonateCount] = useState(3000)
+
+  const { number } = useSpring({
+    reset: false,
+    from: { number: 0 },
+    number: donateCount,
+    delay: 200,
+    config: config.molasses,
+  })
 
   return (
     <div className='hero-section'>
@@ -25,9 +33,12 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div className='donateCount col-12 col-md-6 ms-md-5 mt-5 mt-md--ve'>
+        <div className='donateCount col-12 col-md-3 ms-md-5 mt-5 mt-md--ve'>
           <p>
-            No. of Donators so far : {donateCount}
+            No. of Donators so far
+            <animated.div className='main-count'>
+              {number.to(n => n.toFixed(0))}
+            </animated.div>
           </p>
         </div>
       </div>
