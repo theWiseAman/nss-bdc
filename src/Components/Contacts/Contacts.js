@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 
 import classes from "./Contacts.scss";
+import { Typewriter } from 'react-simple-typewriter';
+
 // import axios from 'axios';
 import { FormGroup } from 'react-bootstrap';
 
@@ -55,12 +57,22 @@ const Contacts = () => {
     }
     
     return (
-        <div className={`${classes.contactBody} contactBody py-5 px-3`}>
+        <div className={`${classes.contactBody} contactBody py-5 px-3`} id='contact-us'>
             <div className='container'>
                 <div className={`${classes.contactForm} contactForm`}>
                     <form action="#" method="POST" onSubmit={submitHandler}>
                         <h1>Contact Us</h1>
-                        <h3 className='mt-3'>Leave us a feedback</h3>
+                        <h3 className='mt-3'>
+                            <Typewriter 
+                                cursor
+                                cursorStyle='_'
+                                typeSpeed={60}
+                                deleteSpeed={30}
+                                delaySpeed={1000}
+                                loop={0}
+                                words={['Leave us a feedback']}
+                            />
+                        </h3>
                         <div className="row">
                             <div className="col-12 col-md-6">
                                 <div className='col-12 my-3'>

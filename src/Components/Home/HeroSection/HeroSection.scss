@@ -7,12 +7,10 @@
   color: hsl(40, 100%, 97%);
   font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
-  margin-bottom: 6rem;
 
   .background {
     height: 60vh;
     background-image: linear-gradient(hsl(248, 100%, 11%), hsl(248, 50%, 11%));
-    padding: 2rem;
 
     .hero-content {
       z-index: 1;
@@ -21,23 +19,14 @@
         font-weight: 500;
         font-size: 3rem;
       }
-      margin-top: 6rem;
-    }
-
-    .pulse {
-      position: absolute;
-      top: 9rem;
-      right: 7rem;
-      width: 40%;
     }
   }
 
   .video-container {
-    width: 480px;
-    height: 360px;
+    max-width: 100%;
+    height: auto;
     z-index: 1;
-    video {
-      margin-top: 9rem;
+    iframe {
       border-radius: 1rem;
       width: 100%;
       height: 100%;
@@ -45,14 +34,36 @@
   }
 
   .donateCount {
-    margin-top: -1rem;
     color: hsl(248, 100%, 11%);
     font-weight: 700;
     font-size: 1.5rem;
   }
 }
 
-@media all and (max-width: 992px) {
+@media all and (min-width: 768px) {
+  .hero-section {
+    margin-bottom: 6rem;
+    .mt-md-top1 {
+      margin-top: 4rem !important;
+    }
+    .mt-md-top2 {
+      margin-top: -7rem !important;
+    }
+    .mt-md--ve {
+      margin-top: -3rem !important;
+    }
+    .video-container {
+      margin-bottom: -10rem;
+      height: 270px;
+    }
+    .pulse {
+      margin-top: -1rem;
+      margin-left: -1rem;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
   .hero-section {
     margin-bottom: 0rem;
     .hero-content {
@@ -60,20 +71,25 @@
     }
     .background {
       height: auto;
+      h1 {
+        font-size: 2rem !important;
+      }
+      p {
+        font-size: 1.1rem;
+      }
     }
     .pulse {
       display: none;
     }
     .donateCount {
       text-align: center;
-      margin-top: 2rem;
       color: floralwhite;
     }
+    .mob-hide {
+      display: none;
+    }
     .video-container {
-      width: 100%;
-      video {
-        margin-top: 1rem;
-      }
+      height: 100%;
     }
   }
 }
