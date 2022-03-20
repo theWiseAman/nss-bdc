@@ -1,129 +1,136 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-footer{
-    background-color:rgb(0, 0, 44);
-    padding:4rem 1rem;
-    line-height: 1.5;
-    font-family: 'Poppins', sans-serif;
+footer {
+  background-color: rgb(0, 0, 44);
+  padding: 4rem 1rem;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
 
-    .container{
-    max-width:1170px;
-    margin:auto;
-}
-ul{
-    list-style:none;
+  .container {
+    max-width: 1170px;
+    margin: auto;
+  }
+  ul {
+    list-style: none;
     padding-left: 0;
-}
-.row{
-    display:flex;
+  }
+  .row {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-.footer-col{
-    width:25%;
-    padding:0 15px;
-}
-.footer-col h2{
-    color:white;
-    font-size:18px;
-    text-transform:capitalize;
+  }
+  .footer-col {
+    width: 25%;
+    padding: 0 15px;
+  }
+  .footer-col h2 {
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
     margin-bottom: 35px;
     font-weight: bold;
     position: relative;
-}
-.footer-col ul li:not(:last-child){
+  }
+  .footer-col ul li:not(:last-child) {
     margin-bottom: 10px;
-}
-.footer-col ul li a{
+  }
+  .footer-col ul li a {
     font-size: 16px;
-    text-transform:capitalize;
-    color:white;
+    text-transform: capitalize;
+    color: white;
     font-weight: 300;
-    display:block;
+    display: block;
     text-decoration: none;
     transition: all 0.3s ease;
-}
-.footer-col ul li a:hover{
-    color:white;
-}
-.footer-col .sociallinks a{
-display:inline-block;
-height:40px;
-width:40px;
-background-color: rgba(255,255,255,0.2);
-margin: 0 10px 10px 0;
-text-align: center;
-line-height: 40px;
-border-radius: 50%;
-color:white;
-transition: all 0.5s ease;
-}
-.footer-col .sociallinks a:hover{
-    color:#24262b;
+  }
+  .footer-col ul li a:hover {
+    color: white;
+  }
+  .footer-col .sociallinks a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.5s ease;
+  }
+  .footer-col .sociallinks a:hover {
+    color: #24262b;
     background-color: white;
     transform: scale(1.2);
-}
-.image-col{
+  }
+  .image-col {
     display: flex;
     flex-wrap: nowrap;
-    justify-content:center;
-}
-.image1{
+    justify-content: center;
+  }
+  .image1 {
     display: inline-block;
     margin: 0.5rem;
     height: 90px;
-    width:90px;
+    width: 90px;
     transition: transform 100ms ease-in-out;
     border-radius: 50%;
     background-color: rgb(0, 0, 44);
-}
-.image1:hover{
+  }
+  .image1:hover {
     transform: scale(1.08);
-}
-.image2{
+  }
+  .image2 {
     display: inline-block;
     margin: 0.5rem;
     height: 90px;
-    width:90px;
+    width: 90px;
     transform: scale(1.05);
     transition: transform 100ms ease-in-out;
     border-radius: 50%;
     background-color: rgb(0, 0, 44);
-}
-.image2:hover{
+  }
+  .image2:hover {
     transform: scale(1.12);
-}
-p{
+  }
+  p {
     text-align: center;
-    color:white;
+    color: white;
     font-weight: 300;
+  }
+
+  @media (max-width: 574px) {
+    .footer-col {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
 }
 
-@media(max-width:574px){
-    .footer-col{
-        width:100%;
-        margin-bottom: 30px;
-   
-    }
-}
+@media (max-width: 768px) {
+  .image1 .image2 {
+    height: 80px;
+    width: 80px;
+  }
+  footer {
+    text-align: center !important;
+  }
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
 }
 
-@media(max-width:768px){
-    .image1 .image2{
-        height: 80px;
-        width: 80px;
-    }
-    footer{
-        text-align: center !important;
-    }
-    .footer-col{
-
-        width:50%;
-        margin-bottom: 30px;
-    }
+#meet-dev {
+  font-size: 1.1rem;
+  color: white;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }

@@ -32,6 +32,9 @@ const Footer = () => {
                </div>
             </div>
            </div>
+           <p align='center'>
+               <a id='meet-dev' href='/developers'>Meet the Developers</a>
+           </p>
            <p align="center">© 2022 NSS BITS PILANI. All Rights Reserved</p>
        </div>
    </footer>
