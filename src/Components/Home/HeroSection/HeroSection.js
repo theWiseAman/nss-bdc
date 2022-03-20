@@ -28,7 +28,7 @@ const HeroSection = () => {
           <div className='col-12 col-md-6'>
             <img className='pulse mob-hide col-12' src='./assets/pulse-animation.png' alt='Background' />
             <div className='video-container col-12 col-md-8 offset-md-2 my-3 mt-md-top2'>
-              <iframe className='mt-0' src='/assets/sample-video.mp4' controls>
+              <iframe className='mt-0' src='/assets/bdc-final-reveal.mp4' controls>
               </iframe>
             </div>
           </div>
