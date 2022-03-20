@@ -3,6 +3,8 @@ import HeroSection from './HeroSection/HeroSection'
 import './Home.scss'
 import Timeline from "../Timeline/Timeline";
 import SlideShow from '../SlideShow/SlideShow';
+import Contacts from '../Contacts/Contacts';
+
 
 const Home = () => {
   return (
@@ -10,6 +12,7 @@ const Home = () => {
       <HeroSection />
       <Timeline />
       <SlideShow />
+      <Contacts />
     </div>
   )
 }

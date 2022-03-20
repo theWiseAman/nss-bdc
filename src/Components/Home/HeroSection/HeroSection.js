@@ -17,9 +17,8 @@ const HeroSection = () => {
               </p>
             </div>
             <div className='video-container col-12 col-md-auto offset-md-1'>
-              <video width='480' height='300' controls>
-                <source src='/assets/sample-video.mp4' type='video/mp4' />
-              </video>
+              <iframe src='/assets/sample-video.mp4' controls>
+              </iframe>
             </div>
           </div>
           <p className='donateCount col-12 col-md-6'>
