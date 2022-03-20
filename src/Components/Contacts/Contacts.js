@@ -61,8 +61,7 @@ const Contacts = () => {
             <div className='container'>
                 <div className={`${classes.contactForm} contactForm`}>
                     <form action="#" method="POST" onSubmit={submitHandler}>
-                        <h1>Contact Us</h1>
-                        <h3 className='mt-3'>
+                        <h1>
                             <Typewriter 
                                 cursor
                                 cursorStyle='_'
@@ -70,9 +69,9 @@ const Contacts = () => {
                                 deleteSpeed={30}
                                 delaySpeed={1000}
                                 loop={0}
-                                words={['Leave us a feedback']}
+                                words={['Contact Us']}
                             />
-                        </h3>
+                        </h1>
                         <div className="row">
                             <div className="col-12 col-md-6">
                                 <div className='col-12 my-3'>
