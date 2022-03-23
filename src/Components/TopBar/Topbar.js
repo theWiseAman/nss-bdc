@@ -34,12 +34,13 @@ const Topbar = () => {
                 </Navbar.Brand>
                 <Navbar.Toggle  aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="offset-md-6">
+                    <Nav className="offset-md-5">
                     
                     </Nav>
                     <Nav className={`${classes.links_top} links_top col-md-auto`}>
                         <a href={"/"} exact={true} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Home</a>
                         <a href={"#steps-to-donate"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Steps To Donate</a>
+                        <a href={"#dos-and-donts"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Dos and Don'ts</a>
                         <a href={"#gallery"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Gallery</a>
                         <a href={"#contact-us"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Contact Us</a>
                     </Nav>

@@ -1,33 +1,69 @@
 import "./timeline.scss"
+import { Typewriter } from 'react-simple-typewriter';
 
 const Timeline = () => (
     <div className="timeline_container" id="steps-to-donate">
-        <h1>Steps To Donate</h1>
+        <h1>
+            <Typewriter 
+                cursor
+                cursorStyle='_'
+                typeSpeed={60}
+                deleteSpeed={30}
+                delaySpeed={1000}
+                loop={0}
+                words={['Steps To Donate']}
+            />
+        </h1>
         <ul>
             <li>
-                <div className="date">2002</div>
-                <div className="title">Title 1</div>
-                <div className="descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas itaque hic quibusdam fugiat est numquam harum, accusamus suscipit consequatur laboriosam!</div>
+                <div className="date">Step 1</div>
+                <div className="title"></div>
+                <div className="descr">Reach Old SAC (Right-wing of SAC).</div>
             </li>
             <li>
-                <div className="date">2007</div>
-                <div className="title">Title 2</div>
-                <div className="descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos adipisci nobis nostrum vero nihil veniam.</div>
+                <div className="date">Step 2</div>
+                <div className="title"></div>
+                <div className="descr">Register & complete the donor’s form at the registration counter.</div>
             </li>
             <li>
-                <div className="date">2012</div>
-                <div className="title">Title 3</div>
-                <div className="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga minima consequuntur soluta placeat iure totam commodi repellendus ea delectus, libero fugit quod reprehenderit, sequi quo, et dolorum saepe nulla hic.</div>
+                <div className="date">Step 3</div>
+                <div className="title"></div>
+                <div className="descr">Check Body Mass Index(BMI).</div>
             </li>
             <li>
-                <div className="date">2017</div>
-                <div className="title">Title 4</div>
-                <div className="descr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, cumque.</div>
+                <div className="date">Step 4</div>
+                <div className="title"></div>
+                <div className="descr">Have your blood type and hemoglobin checked by the doctor.</div>
             </li>
             <li>
-                <div className="date">2022</div>
-                <div className="title">Title 5</div>
-                <div className="descr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, non.</div>
+                <div className="date">Step 5</div>
+                <div className="title"></div>
+                <div className="descr">Collect blood bags & go to the donation site.</div>
+            </li>
+            <li>
+                <div className="date">Step 6</div>
+                <div className="title"></div>
+                <div className="descr">Donate blood under the supervision of doctors.</div>
+            </li>
+            <li>
+                <div className="date">Step 7</div>
+                <div className="title"></div>
+                <div className="descr">Take a rest for a few minutes.</div>
+            </li>
+            <li>
+                <div className="date">Step 8</div>
+                <div className="title"></div>
+                <div className="descr">Enjoy the refreshments.</div>
+            </li>
+            <li>
+                <div className="date">Step 9</div>
+                <div className="title"></div>
+                <div className="descr">Collect Donor's card.</div>
+            </li>
+            <li>
+                <div className="date">Step 10</div>
+                <div className="title"></div>
+                <div className="descr">Exit Old Sac.</div>
             </li>
         </ul>
       </div>

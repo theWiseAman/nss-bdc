@@ -30,10 +30,18 @@ const HeroSection = () => {
       <div className='background container-fluid p-4 p-md-5'>
         <div className='row'>
           <div className='col-12 col-md-6'>
-            <div className='hero-content col-12 col-md-10 ms-md-5 my-3 mt-md-top1'>
+            <div className='hero-content col-12 col-md-10 ms-md-5 my-3'>
               <h1>BLOOD DONATION CAMP</h1>
+              <p className='quotes text-center'>
+                A single pint of blood can save 3 lives,
+                <br />
+                A single gesture of yours can create millions of smiles…!
+              </p>
               <p className='mt-4'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sed adipiscing quisque lectus auctor adipiscing amet. Nisl amet, ac sollicitudin velit lacus a odio urna. Orci leo pulvinar massa velit ipsum adipiscing urna cras hendrerit.
+                Blood Donation Camp(BDC) is one of the most anticipated events of NSS BITS Pilani. It is in collaboration with the Indian Red Cross Society(IRCS), New Delhi. 
+                <br />
+                BDC '22 is organized on 26th & 27th March 2022 @Old SAC, BITS Pilani.
+
               </p>
             </div>
           </div>
