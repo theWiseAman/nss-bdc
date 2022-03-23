@@ -32,7 +32,7 @@ const HeroSection = () => {
           <div className='col-12 col-md-6'>
             <div className='hero-content col-12 col-md-10 ms-md-5 my-3'>
               <h1>BLOOD DONATION CAMP</h1>
-              <p className='quotes text-center'>
+              <p className='quotes'>
                 A single pint of blood can save 3 lives,
                 <br />
                 A single gesture of yours can create millions of smiles…!
@@ -48,8 +48,9 @@ const HeroSection = () => {
           <div className='col-12 col-md-6'>
             <img className='pulse mob-hide col-12' src='./assets/pulse-animation.png' alt='Background' />
             <div className='video-container col-12 col-md-8 offset-md-2 my-3 mt-md-top2'>
-              <iframe className='mt-0' src='/assets/bdc-final-reveal.mp4' controls>
-              </iframe>
+              <video className='mt-0' controls>
+                <source src='/assets/bdc-final-reveal.mp4' type='video/mp4' />
+              </video>
             </div>
           </div>
         </div>
