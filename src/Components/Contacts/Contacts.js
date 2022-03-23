@@ -47,7 +47,7 @@ const Contacts = () => {
             <div className='container'>
                 <div className={`${classes.contactForm} contactForm`}>
                     <form action="#" method="POST" onSubmit={submitHandler}>
-                        <h1>
+                        <h1 className='text-center'>
                             <Typewriter 
                                 cursor
                                 cursorStyle='_'

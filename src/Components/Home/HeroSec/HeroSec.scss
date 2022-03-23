@@ -1,0 +1,68 @@
+.main-hero {
+  min-height: 80vh;
+  background-color: hsl(248, 100%, 11%);
+  color: floralwhite;
+  font-family: poppins;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./bg-droplets-blue.png");
+
+  h1 {
+    font-size: 2.4rem;
+    line-height: 150%;
+  }
+  //   button {
+  //     background: #3a8cd8;
+  //     border-radius: 3rem;
+
+  //     font-size: 1.2rem;
+  //     line-height: 150%;
+  //     border: none;
+
+  //     color: floralwhite;
+  //   }
+}
+
+.time-card {
+  background-color: rgb(245, 245, 245);
+  box-shadow: 5px 5px 16px 0px #b8b6b6;
+  margin: 1rem;
+  font-family: poppins;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+
+  .time-block {
+    display: inline-block;
+    margin: 1rem;
+  }
+}
+.venue-card {
+  transform: translateY(-30%);
+}
+
+.card1 {
+  background-color: #edf3f9;
+  color: #0544a1;
+}
+.card2 {
+  background: url("./bg-droplets-red-small.png");
+  color: white;
+}
+
+@media all and (max-width: 768px) {
+  .main-hero {
+    h1 {
+      font-size: 1.8rem;
+      line-height: 125%;
+    }
+  }
+  .time-card {
+    text-align: center;
+    margin: 0rem;
+    box-shadow: none;
+  }
+  .venue-card {
+    transform: translateY(0%);
+  }
+}

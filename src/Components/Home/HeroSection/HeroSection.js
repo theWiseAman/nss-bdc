@@ -40,19 +40,25 @@ const HeroSection = () => {
                 <p className='mt-3'>
                   Blood Donation Camp(BDC) is one of the most anticipated events of NSS BITS Pilani. It is in collaboration with the Indian Red Cross Society(IRCS), New Delhi. 
                   <br />
-                  <address className='mt-3'>
-                    BDC '22 is organized on 26th & 27th March 2022 @Old SAC, BITS Pilani.
-                  </address>
+                  <div className='venue mt-3'>
+                    BDC '22 is organized on
+                    <br />
+                    <date>Date : </date> 26th and 27th March, 2022
+                    <br />
+                    <time>Time : </time> 9:00 AM - 9:00 PM
+                    <br />
+                    <span>Venue : </span> Old SAC, BITS Pilani
+                  </div>
                 </p>
             </div>
-            <div className='donateCount mob-hide'>
+            {/* <div className='donateCount mob-hide'>
               <p className='col-12 col-md-6 ms-md-5'>
                 No. of Donators so far
                 <animated.div className='main-count'>
                   {number.to(n => n.toFixed(0))}
                 </animated.div>
               </p>
-            </div>
+            </div> */}
           </div>
           <div className='col-12 col-md-6'>
             <img className='pulse mob-hide col-12' src='./assets/pulse-animation.png' alt='Background' />
@@ -62,14 +68,14 @@ const HeroSection = () => {
               </video>
             </div>
           </div>
-          <div className='donateCount desktop-hide'>
+          {/* <div className='donateCount desktop-hide'>
             <p className='col-12 col-md-6 ms-md-5'>
               No. of Donators so far
               <animated.div className='main-count'>
                 {number.to(n => n.toFixed(0))}
               </animated.div>
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
