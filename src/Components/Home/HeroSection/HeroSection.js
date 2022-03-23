@@ -1,9 +1,21 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './HeroSection.scss'
 import { useSpring, animated, config } from 'react-spring'
 
+import sanityClient from '../../../client'
+
 const HeroSection = () => {
-  const [donateCount, setDonateCount] = useState(3000)
+  const [donateCount, setDonateCount] = useState(0)
+
+  useEffect(() => {
+    sanityClient
+      .fetch(`*[_type == "event" && title == "Blood Donation Camp"]{
+        eventCount
+      }`)
+      .then((data) => setDonateCount(data[0].eventCount))
+      .catch(console.error)
+  }, [])
+
 
   const { number } = useSpring({
     reset: false,
