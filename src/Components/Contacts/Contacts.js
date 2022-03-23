@@ -5,7 +5,7 @@ import { Typewriter } from 'react-simple-typewriter';
 
 // import axios from 'axios';
 import { FormGroup } from 'react-bootstrap';
-
+import axios from "axios";
 import validator from 'validator';
 import Form from 'react-validation/build/form';
 import Input from 'react-validation/build/input';
@@ -13,7 +13,6 @@ import Textarea from 'react-validation/build/textarea';
 import Button from 'react-validation/build/button';
 
 // import { useToast } from "@chakra-ui/react"
-
 const required = (value) => {
   if (!value.toString().trim().length) {
     // We can return string or jsx as the 'error' prop for the validated Component
@@ -28,32 +27,19 @@ const email = (value) => {
 };
 
 const Contacts = () => {
-
     const [formData, setFormData] = useState({ name: "", email: "", message: "" });
 
-    // const url1 = 'https://sheet.best/api/sheets/aeb1902d-6681-4939-a7db-999211ca9af6';
-    // const url2 = "https://sheet.best/api/sheets/c971af4e-e04a-43a9-bedf-94aa6df09731";
-    // const toast = useToast();
-
+    const url1 = 'https://sheet.best/api/sheets/6a070d38-0393-4198-8c4c-f73fc13049aa';
+    //const url2 = "https://sheet.best/api/sheets/c971af4e-e04a-43a9-bedf-94aa6df09731";
     const submitHandler = e => {
-        
-        return 'Success'
-        // e.preventDefault();
-        // setFormData({ name: "", email: "", message: "" });
+        e.preventDefault();
+        setFormData({ name: "", email: "", message: "" });
     
-        // const d = new Date();
-
-        // axios.post(Math.random() < 0.5 ? url1 : url2, { ...formData, date: d.toDateString(), time: d.toTimeString() }).then( response => {
-            
-        // });
-
-        // toast({
-        //   title: "Message sent!",
-        //   description: "Our team is looking into it.",
-        //   status: "success",
-        //   duration: 4000,
-        //   isClosable: true,
-        // })
+        const d = new Date();
+        console.log({ ...formData, date: d.toDateString(), time: d.toTimeString() });
+        axios.post(url1, { ...formData, date: d.toDateString(), time: d.toTimeString() }).then(response => {
+            alert("Message sent successfully!");
+        }).catch(error => { console.log(error); });
     }
     
     return (
@@ -112,7 +98,7 @@ const Contacts = () => {
                                 } rows="4" cols="50" placeholder="Hey there, I wanted to say hi and that..." />
                             </div>
                             <div className='row justify-content-center'>
-                                <button className="button p-3">Send message</button>
+                                <button className="button p-3" onSubmit={submitHandler}>Send message</button>
                             </div>
                         </div>
                     </form>
