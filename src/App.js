@@ -4,12 +4,12 @@ import Loader from "./Components/Loader/Loader";
 import React, { useEffect, useState } from 'react';
 
 function App() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 5000);
   }, []);
 
   return (

@@ -6,7 +6,7 @@ import classes from "./Topbar.scss";
 const Topbar = () => {
 
     return (
-        <nav className='px-4'>
+        <nav>
             <Navbar collapseOnSelect expand="lg" variant="light" className={`${classes.navBarTop} navBarTop`}>
                 <Navbar.Brand className={`${classes.brand} brand`}>
                     <a href={"/"} exact={true}>
