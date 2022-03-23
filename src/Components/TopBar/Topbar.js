@@ -6,8 +6,8 @@ import classes from "./Topbar.scss";
 const Topbar = () => {
 
     return (
-        <nav className='px-4'>
-            <Navbar collapseOnSelect expand="lg" variant="light" className={`${classes.navBarTop} navBarTop`}>
+        <nav>
+            <Navbar collapseOnSelect expand="lg" variant="light" className={`${classes.navBarTop} navBarTop px-4`}>
                 <Navbar.Brand className={`${classes.brand} brand`}>
                     <a href={"/"} exact={true}>
                         <div className={`${classes.logo} logo`} style={{ display: "flex", alignItems: "center" }}>
