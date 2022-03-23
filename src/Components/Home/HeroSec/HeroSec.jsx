@@ -13,11 +13,11 @@ const HeroSec = () => {
         <div className='venue-card row justify-content-center'>
             <div className='col-12 col-md-3 py-3 px-5 time-card card1'>
                 <div className='venue mt-3'>
-                    <span style={{fontSize: "1.8rem"}}>Join us at</span>
+                    <span style={{fontSize: "1.8rem", fontWeight: "500"}}>Join us at</span>
                     <br />
                     <span>Old SAC</span>
                     <br />
-                    <span style={{fontSize: "1.8rem"}}>On</span>
+                    <span style={{fontSize: "1.8rem", fontWeight: "500"}}>On</span>
                     <br />
                     <span>26th - 27th Mar</span>
                     <br />
@@ -25,14 +25,14 @@ const HeroSec = () => {
             </div>
             <div className='col-12 col-md-3 py-3 px-5 time-card card2'>
                 <div className='venue mt-3'>                    
-                    <span style={{fontSize: "1.8rem"}}>Time</span>
+                    <span style={{fontSize: "1.8rem", fontWeight: "500"}}>Time</span>
                     <div className='col-auto'>
-                        <div className='col-4 p-3 text-center time-block' style={{background: '#054483', borderRadius: '1rem'}}>
+                        <div className='col-4 p-3 text-center time-block' style={{background: '#022649', borderRadius: '1rem'}}>
                             <div className='col-12' style={{color: 'white', fontSize: '1.75rem'}}>9:00</div>
                             <div className='col-12' style={{color: 'white'}}>AM</div>
                         </div>
                         <div style={{display:"inline-block"}}>to</div>
-                        <div className='col-4 p-3 text-center time-block' style={{background: '#054483', borderRadius: '1rem'}}>
+                        <div className='col-4 p-3 text-center time-block' style={{background: '#022649', borderRadius: '1rem'}}>
                             <div className='col-12' style={{color: 'white', fontSize: '1.75rem'}}>9:00</div>
                             <div className='col-12' style={{color: 'white'}}>PM</div>
                         </div>
