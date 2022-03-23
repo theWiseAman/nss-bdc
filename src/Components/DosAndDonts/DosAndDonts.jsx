@@ -3,7 +3,7 @@ import './DosAndDonts.scss'
 
 const DoesAndDonts = () => {
   return (
-    <div className='container-fluid m-4' id="dos-and-donts">
+    <div className='container my-4' id="dos-and-donts">
       <div className='row'>
         <h1 className='col-12 text-center'>
             Dos And Dont's

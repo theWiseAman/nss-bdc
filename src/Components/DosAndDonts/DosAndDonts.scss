@@ -3,3 +3,9 @@
     height: auto;
   }
 }
+
+@media all and (min-width: 768px) {
+  #dos-and-donts {
+    margin-left: 6.5rem !important;
+  }
+}

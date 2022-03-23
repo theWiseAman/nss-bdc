@@ -12,6 +12,7 @@ const Footer = () => {
                    <ul>
                        <li><a href="/">Home</a></li>
                        <li><a href="#steps-to-donate">Steps to Donate</a></li>
+                       <li><a href="#dos-and-donts">Dos And Donts</a></li>
                        <li><a href="#gallery">Gallery</a></li>
                        <li><a href="#contact-us">Contact Us</a></li>
                     </ul>
@@ -25,10 +26,10 @@ const Footer = () => {
                <div className="footer-col">
                <div className="sociallinks" style={{textAlign:"center"}}>
                    <h2>Follow us on</h2>
-                   <a href="#"><i className="fab fa-facebook-f"></i></a>
-                   <a href="#"><i className="fab fa-twitter"></i></a>
-                   <a href="#"><i className="fab fa-instagram"></i></a>
-                   <a href="#"><i className="fab fa-linkedin-in"></i></a>
+                   <a href="https://www.facebook.com/nssbits/"><i className="fab fa-facebook-f"></i></a>
+                   <a href="https://twitter.com/nssbits"><i className="fab fa-twitter"></i></a>
+                   <a href="https://www.instagram.com/nssbitspilani/"><i className="fab fa-instagram"></i></a>
+                   <a href="https://in.linkedin.com/company/nss-bits-pilani"><i className="fab fa-linkedin-in"></i></a>
                </div>
             </div>
            </div>
