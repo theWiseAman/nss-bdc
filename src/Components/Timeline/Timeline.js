@@ -10,7 +10,7 @@ const Timeline = () => (
                 typeSpeed={60}
                 deleteSpeed={30}
                 delaySpeed={1000}
-                loop={0}
+                loop={1}
                 words={['Steps To Donate']}
             />
         </h1>

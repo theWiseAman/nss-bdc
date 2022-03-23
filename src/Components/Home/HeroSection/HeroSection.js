@@ -27,21 +27,30 @@ const HeroSection = () => {
 
   return (
     <div className='hero-section'>
-      <div className='background container-fluid p-4 p-md-5'>
+      <div className='background container-fluid py-3 pt-md-5 px-5'>
         <div className='row'>
           <div className='col-12 col-md-6'>
             <div className='hero-content col-12 col-md-10 ms-md-5 my-3'>
-              <h1>BLOOD DONATION CAMP</h1>
-              <p className='quotes'>
-                A single pint of blood can save 3 lives,
-                <br />
-                A single gesture of yours can create millions of smiles…!
-              </p>
-              <p className='mt-4'>
-                Blood Donation Camp(BDC) is one of the most anticipated events of NSS BITS Pilani. It is in collaboration with the Indian Red Cross Society(IRCS), New Delhi. 
-                <br />
-                BDC '22 is organized on 26th & 27th March 2022 @Old SAC, BITS Pilani.
-
+                <h1>BLOOD DONATION CAMP</h1>
+                <p>
+                  A single pint of blood can save 3 lives,
+                  <br />
+                  A single gesture of yours can create millions of smiles…!
+                </p>
+                <p className='mt-3'>
+                  Blood Donation Camp(BDC) is one of the most anticipated events of NSS BITS Pilani. It is in collaboration with the Indian Red Cross Society(IRCS), New Delhi. 
+                  <br />
+                  <address className='mt-3'>
+                    BDC '22 is organized on 26th & 27th March 2022 @Old SAC, BITS Pilani.
+                  </address>
+                </p>
+            </div>
+            <div className='donateCount mob-hide'>
+              <p className='col-12 col-md-6 ms-md-5'>
+                No. of Donators so far
+                <animated.div className='main-count'>
+                  {number.to(n => n.toFixed(0))}
+                </animated.div>
               </p>
             </div>
           </div>
@@ -53,14 +62,14 @@ const HeroSection = () => {
               </video>
             </div>
           </div>
-        </div>
-        <div className='donateCount col-12 col-md-3 ms-md-5 mt-5 mt-md--ve'>
-          <p>
-            No. of Donators so far
-            <animated.div className='main-count'>
-              {number.to(n => n.toFixed(0))}
-            </animated.div>
-          </p>
+          <div className='donateCount desktop-hide'>
+            <p className='col-12 col-md-6 ms-md-5'>
+              No. of Donators so far
+              <animated.div className='main-count'>
+                {number.to(n => n.toFixed(0))}
+              </animated.div>
+            </p>
+          </div>
         </div>
       </div>
     </div>

@@ -54,7 +54,7 @@ const Contacts = () => {
                                 typeSpeed={60}
                                 deleteSpeed={30}
                                 delaySpeed={1000}
-                                loop={0}
+                                loop={1}
                                 words={['Contact Us']}
                             />
                         </h1>
@@ -98,7 +98,7 @@ const Contacts = () => {
                                 } rows="4" cols="50" placeholder="Hey there, I wanted to say hi and that..." />
                             </div>
                             <div className='row justify-content-center'>
-                                <button className="button p-3" onSubmit={submitHandler}>Send message</button>
+                                <button className="button" onSubmit={submitHandler}>Send message</button>
                             </div>
                         </div>
                     </form>

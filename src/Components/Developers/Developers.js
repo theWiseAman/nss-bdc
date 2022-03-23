@@ -1,11 +1,22 @@
 import './Developers.scss';
+import { Typewriter } from "react-simple-typewriter";
 
 const Developers = () => {
     
     return (
         <div>
             <div className="devHead">
-                <h1>Meet the developers</h1>
+                <h1>
+                    <Typewriter 
+                        cursor
+                        cursorStyle='_'
+                        typeSpeed={60}
+                        deleteSpeed={30}
+                        delaySpeed={1000}
+                        loop={1}
+                        words={['Meet the developers']}
+                    />
+                </h1>
             </div>
             <div className="devContainer">
                 <div className="devCard">

@@ -7,5 +7,9 @@
 @media all and (min-width: 768px) {
   #dos-and-donts {
     margin-left: 6.5rem !important;
+    li {
+      font-size: 1.25rem;
+      line-height: 200%;
+    }
   }
 }

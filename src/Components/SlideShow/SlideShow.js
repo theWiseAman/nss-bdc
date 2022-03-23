@@ -22,6 +22,7 @@
 
 import ImageGallery from 'react-image-gallery';
 import "./SlideShow.scss"
+import { Typewriter } from "react-simple-typewriter";
 
 const images = [
   {
@@ -34,7 +35,17 @@ const images = [
 
 const SlideShow = () => (
     <div className="slideshow-container" id="gallery">
-        <h1>Gallery</h1>
+        <h1 className='m-3'>
+          <Typewriter 
+                cursor
+                cursorStyle='_'
+                typeSpeed={60}
+                deleteSpeed={30}
+                delaySpeed={1000}
+                loop={1}
+                words={['Gallery']}
+            />
+        </h1>
         <ImageGallery
             items={images}
             showThumbnails={false}

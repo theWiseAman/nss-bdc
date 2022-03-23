@@ -1,14 +1,40 @@
 import React from 'react'
 import './DosAndDonts.scss'
+import { Typewriter } from "react-simple-typewriter";
+
 
 const DoesAndDonts = () => {
   return (
-    <div className='container my-4' id="dos-and-donts">
-      <div className='row'>
+    <div className='container py-4' id="dos-and-donts">
+      <div className='row mx-3'>
         <h1 className='col-12 text-center'>
-            Dos And Dont's
+          <Typewriter 
+                cursor
+                cursorStyle='_'
+                typeSpeed={60}
+                deleteSpeed={30}
+                delaySpeed={1000}
+                loop={1}
+                words={[`Do's And Don'ts`]}
+            />
         </h1>
-        <img className='my-3 text-center col-12 offset-md-4 col-md-4' src='./assets/does-and-donts.jpeg' alt='Does and Donts Poster' />
+        <ul className='col-12 my-3 col-md-6'>
+          <h3>Do's</h3>
+          <li>Drink an extra half-liter of bottle 6 hours before donation.</li>
+          <li>Have a sufficient healthy meal 2-3 hours before donation.</li>
+          <li>Have adequate amount of sleep before donation.</li>
+          <li>Do not consume antibiotics 72 hours prior to donation.</li>          
+        </ul>
+        <ul className='col-12 my-3 col-md-6'>
+          <h3>Don'ts</h3>
+          <li>Do not consume alcohol or cigarettes 72 hours prior to donation.</li>          
+          <li>Avoid donating blood in case you had any tattoo or piercing in the last 12 months.</li>          
+          <li>Avoid donating blood if you are covid positive or vaccinated in the last 14 days.</li>          
+          <li>Avoid antibiotics/antihistamines 72 hours prior to donation.</li> 
+          <li>Avoid donating blood if</li>          
+          <li>Avoid antibiotics/antihistamines 72 hours prior to donation.</li>          
+
+        </ul>
       </div>
     </div>
   )
