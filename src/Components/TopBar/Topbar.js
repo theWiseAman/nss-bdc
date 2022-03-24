@@ -13,36 +13,42 @@ const Topbar = () => {
                         <div className={`${classes.logo} logo`} style={{ display: "flex", alignItems: "center" }}>
                         
                             <div>
-                                <img className={`${classes.bdcLogo} bdcLogo`} src="/assets/logo_bdc.svg" />
-                                <img className={`${classes.nssLogo} nssLogo ms-2 px-2`} src="/assets/nss_84.png" />
+                                <a href='/'>
+                                    <img className={`${classes.bdcLogo} bdcLogo`} src="/assets/logo_bdc.svg" />
+                                </a>
+                                <a href='https://nssbitspilani.org/' target='_blank'>
+                                    <img className={`${classes.nssLogo} nssLogo ms-2 px-2`} src="/assets/nss_84.png" />
+                                </a>
                             </div>
-                            <div className={`${classes.logoName} logoName`} style={{ display: "flex", alignItems: "center"}}>
-                                <div className={`${classes.nss} nss`}>
-                                    NSS
-                                </div>
-                                <div style={{display: "flex", flexDirection: "column", marginLeft: "0.2rem"}}>
-                                    <div className={`${classes.bits} bits`}>
-                                        BITS
+                            <a href='https://nssbitspilani.org/' target='_blank'>
+
+                                <div className={`${classes.logoName} logoName`} style={{ display: "flex", alignItems: "center"}}>
+                                    <div className={`${classes.nss} nss`}>
+                                        NSS
                                     </div>
-                                    <div className={`${classes.bits} bits`}>
-                                        PILANI
+                                    <div style={{display: "flex", flexDirection: "column", marginLeft: "0.2rem"}}>
+                                        <div className={`${classes.bits} bits`}>
+                                            BITS
+                                        </div>
+                                        <div className={`${classes.bits} bits`}>
+                                            PILANI
+                                        </div>
                                     </div>
-                                </div>
-                            </div>                
+                                </div>                
+                            </a>
                         </div>
                     </a>
                 </Navbar.Brand>
                 <Navbar.Toggle  aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="offset-md-5">
-                    
-                    </Nav>
-                    <Nav className={`${classes.links_top} links_top col-md-auto`}>
-                        <a href={"/"} exact={true} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Home</a>
-                        <a href={"#steps-to-donate"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Steps To Donate</a>
-                        <a href={"#dos-and-donts"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Do's and Don'ts</a>
-                        <a href={"#gallery"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Gallery</a>
-                        <a href={"#contact-us"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Contact Us</a>
+                    <Nav className='d-md-flex justify-content-end'>
+                        <Nav className={`${classes.links_top} col-md-auto links_top`}>
+                            <a href={"/"} exact={true} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Home</a>
+                            <a href={"#steps-to-donate"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Steps To Donate</a>
+                            <a href={"#dos-and-donts"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Do's and Don'ts</a>
+                            <a href={"#gallery"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Gallery</a>
+                            <a href={"#contact-us"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Contact Us</a>
+                        </Nav>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

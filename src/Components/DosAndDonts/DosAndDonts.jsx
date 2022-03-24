@@ -27,6 +27,7 @@ const DoesAndDonts = () => {
         <ul className='col-12 my-3 col-md-6'>
           <h3>Don'ts</h3>
           <li>Do not consume alcohol or cigarettes 72 hours prior to donation.</li>          
+          <li>Avoid caffein intake.</li>          
           <li>Avoid donating blood in case you had any tattoo or piercing in the last 12 months.</li>          
           <li>Avoid donating blood if you are covid positive or vaccinated in the last 14 days.</li>          
           <li>Avoid antibiotics/antihistamines 72 hours prior to donation.</li> 
