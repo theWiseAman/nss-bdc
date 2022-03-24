@@ -41,7 +41,7 @@ const Topbar = () => {
                 </Navbar.Brand>
                 <Navbar.Toggle  aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className='d-md-flex justify-content-end'>
+                    <Nav style={{ marginLeft: 'auto'}}>
                         <Nav className={`${classes.links_top} col-md-auto links_top`}>
                             <a href={"/"} exact={true} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Home</a>
                             <a href={"#steps-to-donate"} className="top_link m-lg-1 m-xl-2 p-lg-1 p-xl-2" activeClassName="active_top_link">Steps To Donate</a>
